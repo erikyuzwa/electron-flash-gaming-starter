@@ -1,21 +1,21 @@
 # electron-flash-gaming-starter
 
-this is a starter project for using Starling+Flash with Electron for native desktop packaging.
+This is a starter project for using a Flash game library with Electron for native desktop packaging.
 
 ## installation
 
 * `npm install`
 
-## Gamua Starling
+## FlashPunk 1.7.2
 
-This project is using `Starling v2.1`, however feel free to drop in your own preferred Flash library.
+This project is using `FlashPunk v1.7.2`, however feel free to drop in your own preferred Flash library.
 
 ## Pepper Flash
 
 Electron makes use of the Chromium browser, and so the Flash bridge is handled via PepperFlash.
 
 Included in this project are the win32 / win64 pepperflash binaries, but if you need to update or 
-use a different version
+use a different version.
 
 ### Windows 
 

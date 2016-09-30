@@ -13,17 +13,8 @@ module.exports = function(grunt) {
         copy: {
             build: {
                 files: [
-                    // includes files within path
-                    //{expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile'},
-
                     // includes files within path and its sub-directories
-                    {expand: true, cwd: 'app/', src: ['**', '!src/**', '!styles/*.scss'], dest: 'dist/'},
-
-                    // makes all src relative to cwd
-                    //{expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
-
-                    // flattens results to a single level
-                    //{expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'},
+                    {expand: true, cwd: 'app/', src: ['**', '!src/**', '!styles/*.scss'], dest: 'dist/'}
                 ],
             },
 
