@@ -17,3 +17,23 @@ bin-release/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+
+# our build output folder
+dist/
+
+# any idea IDE stuff 
+.idea/
+
+# node_modules
+node_modules/
+
+# sass cache
+.sass-cache/
+
+# generated CSS
+app/styles/*.css
+app/styles/*.css.map
+
+
+
+

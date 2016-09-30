@@ -1,0 +1,26 @@
+{
+  "name": "electron-starling",
+  "version": "0.0.5",
+  "description": "a sample of using Starling with Electron",
+  "main": "./app/main.js",
+  "scripts": {
+    "build": "",
+    "pack-win32": "",
+    "pack-win64": "",
+    "start": "grunt && electron ./dist/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.4.2",
+    "flex-sdk": "^4.6.0-0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mxmlc": "^0.5.3"
+  }
+}
