@@ -2,6 +2,8 @@
 
 This is a starter project for using a Flash game library with Electron for native desktop packaging.
 
+![Alt text](/screenshot.png?raw=true "starter screenshot")
+
 ## installation and usage
 
 * `npm install`
