@@ -29,6 +29,9 @@ switch (process.platform) {
     break
 }
 
+var test = path.join(__dirname, pluginName);
+
+
 // put everything together and pass as a command line param to the app. path.join will take care of our
 // '\' or '/' in the app depending on OS
 app.commandLine.appendSwitch('ppapi-flash-path', path.join(__dirname, pluginName));
@@ -52,7 +55,9 @@ function createWindow () {
 
   // Open the DevTools.
   // TODO find a way to open the devtools window undocked to this one
-  //mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
+
+  console.log(test);
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {

@@ -14,7 +14,7 @@ module.exports = function(grunt) {
             build: {
                 files: [
                     // includes files within path and its sub-directories
-                    {expand: true, cwd: 'app/', src: ['**', '!src/**', '!styles/*.scss'], dest: 'dist/'}
+                    {expand: true, cwd: 'app/', src: ['**', '!src/**', '!styles/*.scss'], dest: 'build/'}
                 ],
             },
 
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                     presets: ['es2015']
                 },
                 files: {
-                    'dist/bundle.js': './app/src/js/app.js'
+                    'build/bundle.js': './app/src/js/app.js'
                 }
             }
         },
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                 'dist/example.swf': ['app/src/as/Main.as']
+                 'build/example.swf': ['app/src/as/Main.as']
                 }
             }
         },
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
             },
             build: {
                 files: {
-                    'dist/bundle.min.js': ['<%= jshint.files %>']
+                    'build/bundle.min.js': ['<%= jshint.files %>']
                 }
             }
         }

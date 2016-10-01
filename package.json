@@ -1,18 +1,20 @@
 {
   "name": "electron-starling",
-  "version": "0.0.5",
-  "description": "a sample of using Starling with Electron",
+  "version": "0.5.5",
+  "description": "a sample of using a flash game library with Electron",
   "main": "./app/main.js",
   "scripts": {
-    "build": "",
-    "pack-win32": "",
-    "pack-win64": "",
-    "start": "grunt && electron ./dist/main.js"
+    "pack-win32": "grunt && electron-packager ./build hello --overwrite=true --out=dist --platform=win32 --arch=ia32 --version=1.4.2",
+    "pack-win64": "grunt && electron-packager ./build hello --overwrite=true --out=dist --platform=win32 --arch=x64 --version=1.4.2",
+    "pack-linux": "grunt && electron-packager ./build hello --overwrite=true --out=dist --platform=linux --arch=x64 --version=1.4.2",
+    "pack-darwin": "grunt && electron-packager ./build hello --overwrite=true --out=dist --platform=darwin --arch=x64 --version=1.4.2",
+    "start": "grunt && electron ./build/main.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "electron": "^1.4.2",
+    "electron-packager": "^8.1.0",
     "flex-sdk": "^4.6.0-0",
     "grunt": "^1.0.1",
     "grunt-babel": "^6.0.0",
