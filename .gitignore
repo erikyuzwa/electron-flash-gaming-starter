@@ -20,6 +20,7 @@ bin-release/
 
 # our build output folder
 dist/
+build/
 
 # any idea IDE stuff 
 .idea/
@@ -33,6 +34,10 @@ node_modules/
 # generated CSS
 app/styles/*.css
 app/styles/*.css.map
+
+# ignore npm logs
+npm-debug.log
+
 
 
 
